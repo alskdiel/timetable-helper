@@ -1,0 +1,46 @@
+<html>
+<head>
+<meta http-equiv="Context-Type" context="text/html;charset=UTF-8" />
+  <title>Document</title>
+  <script language="javascript">
+<!--
+	function delCookie() {
+		setCookie("daychoice", "all_day");
+		setCookie("acachoice", "all_aca");
+		setCookie("majorchoice", "all_major");
+		//setCookie("board_value","");
+
+		setCookie("timetable_value", " ");
+		setCookie("delchoice", " ");
+	
+		//location.reload()
+	}
+
+	function setCookie(name, value, expires) {
+		document.cookie = name + "=" + encodeURI(value) + "; path=/" + ((expires == null) ? "" : "; expires=" + expires.toGMTString());
+	}
+-->
+  </script>
+</head>
+<body bgcolor="f4ffe6">
+<table>
+	<tr height="150" valign="top">
+		<td><font size="2" style="font-family:'돋움'" color="004000"><b>메뉴</b></font></td>
+	</tr>
+	<tr height="45">
+		<td onclick="delCookie()"><a href="right.html" target="right" style="text-decoration:none;"><font size="2" style="font-family:'돋움'" color="004000">시간표 작성</font></a></td>
+	</tr>
+	<tr height="45">
+		<td align="left"><font size="2"><a href="/jspbook/termP/loggedin/timeTable_display.jsp" style="text-decoration:none; color:535353;font-family:'돋움'" target="right">시간표 보기</a></td>
+	</tr>
+	<tr height="45">
+		<td onclick="delCookie()"><a href="right_board.jsp" target="right" style="text-decoration:none;"><font size="2" style="font-family:'돋움'" color="004000">수강 후기</font></a></td>
+	</tr>
+	<tr height="45">
+		<td onclick="delCookie()"><a href="logout.jsp" target="_top" style="text-decoration:none;"><font size="2" style="font-family:'돋움'" color="004000">로그아웃</font></a></td>
+	</tr>
+
+</table>
+</body>
+</html>
+

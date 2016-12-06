@@ -1,0 +1,69 @@
+<html>
+<head>
+<meta http-equiv="Context-Type" context="text/html;charset=UTF-8" />
+  <title>Document</title>
+  <script language="javascript">
+<!--
+	function name_confirm(element){
+		element.name.value = element.text.value;
+		element.submit();
+	}
+	function aca_confirm(element){
+		for(var i=0; i<element.aca_choice.length; i++){
+			if(element.aca_choice.options[i].selected){
+				element.year.value = element.aca_choice.options[i].text;
+			}
+		}
+		element.submit();
+	}
+	function major_confirm(element){
+		for(var i=0; i<element.major_choice.length; i++){
+			if(element.major_choice.options[i].selected){
+				element.major.value = element.major_choice.options[i].text;
+			}
+		}
+		element.submit();
+	}
+-->
+  </script>
+</head>
+<body>
+<SCRIPT LANGUAGE="JavaScript"> 
+   var myday = new Date();
+   myday.setTime(myday.getTime() +  (365 * 24 * 60 * 60 * 1000));
+</script>
+<form name="form" action="manage_right.jsp" target="manage_right">
+
+<input type="hidden" name="name">
+<input type="hidden" name="year">
+<input type="hidden" name="major">
+<font size="2" style="font-family:'돋움'">이름</font><br>
+<input type="text" name="text" size="10" style="font-family:'돋움'" onBlur="name_confirm(form)"><br><br>
+<font size="2" style="font-family:'돋움'">학년</font><br>
+<select name="aca_choice" onchange="aca_confirm(form)" style="font-family:'돋움'">
+   <option value="all_aca" selected>전체학년
+   <option value="aca_1">1학년
+   <option value="aca_2">2학년
+   <option value="aca_3">3학년
+   <option value="aca_4">4학년
+</select>
+<br>
+<br>
+<font size="2" style="font-family:'돋움'">학과</font><br>
+<select name="major_choice" onchange="major_confirm(form)" style="font-family:'돋움'">
+   <option value="all_major" selected>공통
+   <option value="major_inf">정보통신공학
+   <option value="major_com">컴퓨터정보공학
+   <option value="major_elc">전자및항공
+   <option value="major_machine">항우기학부
+   <option value="major_flight">항공운항
+   <option value="major_mat">항공재료
+   <option value="major_bus">경영학과
+   <option value="major_eng">영어
+   <option value="major_tra">항공교통
+   <option value="major_law">우주법
+   <option value="major_trade">물류
+</select>
+</form>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<html>
+<head>
+<meta http-equiv="Context-Type" context="text/html;charset=UTF-8" />
+  <title>Document</title>
+  <script language="javascript">
+<!--
+	function cLogin(element, str){
+		element.src = str;
+	}
+
+	function focused(element, str){
+		element.value = str;
+	}
+
+	function login(){
+		form.submit();
+	}
+
+-->
+  </script>
+</head>
+<body>
+	<form name="form" action="logincheck.jsp" method="post">
+	<table align="center" border="0">
+		<tr height="240" valign="bottom">
+			<td><img src="images/nmms_232522918.gif"></td>
+		</tr>
+		<tr valign="top">
+			<td align="center"><img src="images/logo2.jpg" name="logo" width="400"></td>
+		</tr>
+		<tr><td>
+			<table align="center" border="0" bgcolor="fafafa">
+				<tr align="center" valign="bottom" height="50">
+					<td width="150"><input type="text" name="id" size="15" value="ID" onfocus="focused(this, '')"></td>
+					<td valign="center" align="left" rowspan="2"><img src="images/login2.jpg" name="imgLog" width="60" onmouseover="cLogin(this, 'images/login2_c.jpg')" onmouseout="cLogin(this, 'images/login2.jpg')" onclick="login()" style='cursor:hand;'></td>
+				</tr>
+				<tr align="center">
+					<td><input type="password" name="pw" size="16" value="temporary" onfocus="focused(this, '')"></td>
+				</tr>
+				<tr align="center" valign="bottom">
+					<td><input type="checkbox" name="saveID"><font size="1" color="646464">아이디 기억하기</font></td>
+					<td align="left"><font size="1" color="646464"><a href="register.html" style="text-decoration:none; color:3e3e3e;" onclick="window.open(this.href, '회원가입', 'width=360, height=430, left=400, top=200, resizable=no'); return false;" border="0">회원가입</a><br>
+					<a href="abc.html" style="text-decoration:none; color:3e3e3e">아이디</a>/<a href="abc.html" style="text-decoration:none; color:3e3e3e">비밀번호</a> 찾기</font></td>
+				</tr>
+			</table>
+		</td></tr>
+	</table>
+	</form>
+</body>
+</html>
+
+
+

@@ -1,0 +1,37 @@
+<html>
+<head>
+<meta http-equiv="Context-Type" context="text/html;charset=UTF-8" />
+  <title>left</title>
+  <script language="javascript">
+<!--
+	function delCookie() {
+		setCookie("NN", "");
+		setCookie("YY", "전체학년");
+		setCookie("MM", "공통");
+
+		//location.reload()
+	}
+
+	function setCookie(name, value, expires) {
+		document.cookie = name + "=" + encodeURI(value) + "; path=/" + ((expires == null) ? "" : "; expires=" + expires.toGMTString());
+	}
+-->
+  </script>
+</head>
+<body bgcolor="f8fff7">
+	<table>
+		<tr height="150" valign="top">
+			<td><font size="2" style="font-family:'돋움'"><b>관리자 페이지 입니다.</b></font></td>
+		</tr>
+		<tr height="40">
+			<td align="left" onclick="delCookie()"><font size="2" style="font-family:'돋움'"><a href="right.html" style="text-decoration:none; color:535353;" target="right">DB 추가</a></td>
+		</tr>
+		<tr height="40">
+			<td align="left" onclick="delCookie()"><font size="2" style="font-family:'돋움'"><a href="manage_users.html" style="text-decoration:none; color:535353;" target="right">회원 관리</a></td>
+		</tr>
+		<tr height="40">
+			<td align="left"><font size="2" style="font-family:'돋움'"><a href="/jspbook/termP/index.html" style="text-decoration:none; color:535353;" target="_top">로그아웃</a></td>
+		</tr>
+	</table>
+</body>
+</html>
